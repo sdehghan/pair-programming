@@ -1,6 +1,6 @@
 import React from 'react'
 import './Shoes.scss'
-import shoe1 from '../../Assets/shoe1.png'
+import shoe1 from '../../Assets/doll-clothes/shoe1.png'
 
 class Shoes extends React.Component{
 

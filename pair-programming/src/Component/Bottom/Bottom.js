@@ -1,15 +1,20 @@
 import React from 'react'
 import './Bottom.scss'
-import bottom1 from '../../Assets/bottom1.png'
+import bottom1 from '../../Assets/doll-clothes/bottom1.png'
 
 class Bottom extends React.Component{
 
+    clickHandler=(event)=>{
+       
+          console.log(event.target.name.value)
 
+    }
     render(){
+        
 
         return(
         <section>
-         <div>
+         <div  name="top1" onClick={this.clickHandler}>
           <img src={bottom1} alt="bottom-one"/>
          </div>
          {/* <div>

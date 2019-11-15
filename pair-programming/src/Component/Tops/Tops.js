@@ -1,6 +1,6 @@
 import React from 'react'
 import './Tops.scss'
-import top1 from '../../Assets/top1.png'
+import top1 from '../../Assets/doll-clothes/top1.png'
 
 class Tops extends React.Component{
 
