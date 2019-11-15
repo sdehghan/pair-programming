@@ -1,5 +1,11 @@
-.pants-section {
-    display: flex;
-    flex-wrap: wrap;
-    height: 120px;
+.upperbody {
+    position: relative;
+}
+
+.upperbody-img {
+    top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }

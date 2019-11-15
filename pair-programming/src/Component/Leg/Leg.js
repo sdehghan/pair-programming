@@ -9,9 +9,9 @@ class Leg extends React.Component{
     render(){
 
         return(
-          <section>
-            <img src={this.props.middle} />
+          <section className="leg">
             <img src={MIDDLE} alt="bottom" />
+            <img className="leg-img" src={this.props.middle} />
          </section>
         )
     }

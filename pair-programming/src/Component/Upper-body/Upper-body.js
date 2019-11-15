@@ -9,9 +9,9 @@ class Upperbody extends React.Component{
         console.log(this.props)
      
         return(
-            <section>
-             <img src={this.props.tops} />
+            <section className="upperbody">
              <img src={TOP} />
+             <img className="upperbody-img" src={this.props.tops} />
             </section>
         )
     }

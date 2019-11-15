@@ -8,9 +8,9 @@ class Feet extends React.Component{
     render(){
 
         return(
-        <section>
-            <img src={this.props.bottom} />
+        <section className='feet'>
             <img src={BOTTOM} />
+            <img className='feet-img' src={this.props.bottom} />
         </section>
         )
     }
