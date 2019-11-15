@@ -9,9 +9,13 @@ import './Shoes.scss'
 class Shoes extends React.Component{
     
     state={
-        show:true
+        show1:true,
+        show2:true,
+        show3:true,
+        show4:true,
+        show5:true
     }
-    clickHandler=(event)=>{
+    clickHandler=(event,i)=>{
         let image=event.target.src;
         console.log(event.target)
         this.props.changeBottom(image)
@@ -20,20 +24,20 @@ class Shoes extends React.Component{
     render(){
         return(
          <section>
-          <div onClick={this.clickHandler}>
-            {this.state.show?  <img src={this.props.data.shoe1} alt="shoe-one"/>:null}
+          <div onClick={(event)=>this.clickHandler(event,0)}>
+            {this.state.show1?  <img src={this.props.data.shoe1} alt="shoe-one"/>:null}
           </div>
-          <div onClick={this.clickHandler}>
-            {this.state.show?  <img src={this.props.data.shoe2} alt="shoe-two"/>:null}
+          <div onClick={(event)=>this.clickHandler(event,1)}>
+            {this.state.show2?  <img src={this.props.data.shoe2} alt="shoe-two"/>:null}
           </div>
-          <div onClick={this.clickHandler}>
-            {this.state.show?  <img src={this.props.data.shoe3} alt="shoe-three"/>:null}
+          <div onClick={(event)=>this.clickHandler(event,2)}>
+            {this.state.show3?  <img src={this.props.data.shoe3} alt="shoe-three"/>:null}
           </div>
-          <div onClick={this.clickHandler}>
-            {this.state.show?  <img src={this.props.data.shoe4} alt="shoe-four"/>:null}
+          <div onClick={(event)=>this.clickHandler(event,3)}>
+            {this.state.show4?  <img src={this.props.data.shoe4} alt="shoe-four"/>:null}
           </div>
-          <div onClick={this.clickHandler}>
-            {this.state.show?  <img src={this.props.data.shoe5} alt="shoe-five"/>:null}
+          <div onClick={(event)=>this.clickHandler(event,4)}>
+            {this.state.show5?  <img src={this.props.data.shoe5} alt="shoe-five"/>:null}
           </div>
         </section>
         )
