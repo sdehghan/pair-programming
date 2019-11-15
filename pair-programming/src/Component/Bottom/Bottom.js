@@ -1,5 +1,6 @@
 import React from 'react'
 import './Bottom.scss'
+import bottom1 from '../../Assets/bottom1.png'
 
 class Bottom extends React.Component{
 
@@ -9,9 +10,9 @@ class Bottom extends React.Component{
         return(
         <section>
          <div>
-          <img src="" alt="bottom-one"/>
+          <img src={bottom1} alt="bottom-one"/>
          </div>
-         <div>
+         {/* <div>
           <img src="" alt="bottom-two"/>
          </div>
           <img src="" alt="bottom-three"/>
@@ -20,7 +21,7 @@ class Bottom extends React.Component{
          </div>
          <div>
           <img src="" alt="bottom-five"/>
-         </div>
+         </div> */}
         </section>
         )
     }

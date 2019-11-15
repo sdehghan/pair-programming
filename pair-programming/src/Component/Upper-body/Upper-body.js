@@ -1,14 +1,14 @@
 import React from 'react'
-import './Upperbody.scss'
+import './Upper-body.scss'
 
 
 class Upperbody extends React.Component{
-
+  
 
     render(){
-
+      console.log(this.props)
         return(
-          <div class="upperbody"></div>
+            <img src={this.props.tops} />
         )
     }
 }

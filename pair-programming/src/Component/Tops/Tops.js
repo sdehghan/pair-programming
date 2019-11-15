@@ -1,5 +1,6 @@
 import React from 'react'
 import './Tops.scss'
+import top1 from '../../Assets/top1.png'
 
 class Tops extends React.Component{
 
@@ -9,9 +10,9 @@ class Tops extends React.Component{
         return(
         <section>
          <div>
-          <img src="" alt="top-one"/>
+          <img src={top1} alt="top-one"/>
          </div>
-         <div>
+         {/* <div>
           <img src="" alt="top-two"/>
          </div>
           <img src="" alt="top-three"/>
@@ -20,7 +21,7 @@ class Tops extends React.Component{
          </div>
          <div>
           <img src="" alt="top-five"/>
-         </div>
+         </div> */}
         </section>
         )
     }

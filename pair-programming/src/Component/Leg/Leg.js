@@ -8,7 +8,7 @@ class Leg extends React.Component{
     render(){
 
         return(
-         null
+            <img src={this.props.middle} />
         )
     }
 }

@@ -1,14 +1,11 @@
 import React from 'react'
 import './Main.scss'
-
-
+import Tops from '../Tops/Tops'
+import Bottom from '../Bottom/Bottom'
+import Shoes from '../Shoes/Shoes';
+import Body from '../Body/Body';
 class Main extends React.Component{
-   
-    state={
-        Tops:null,
-        bottom:null,
-        Shoes:null
-    }
+
 
     render(){
 
@@ -16,13 +13,15 @@ class Main extends React.Component{
          <>
            <section className="Body">
 
-              <h1>Hello</h1> 
-              {/* <Body></Body>
+              <h1>Dress Me Up!</h1> 
+              <section>
+              <Body></Body>
+              </section>
               <section>
                   <Tops></Tops>
                   <Bottom></Bottom>
                   <Shoes></Shoes>
-              </section> */}
+              </section>
            </section>
          </>
         )

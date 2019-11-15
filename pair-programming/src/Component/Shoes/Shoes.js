@@ -1,5 +1,6 @@
 import React from 'react'
 import './Shoes.scss'
+import shoe1 from '../../Assets/shoe1.png'
 
 class Shoes extends React.Component{
 
@@ -9,9 +10,9 @@ class Shoes extends React.Component{
         return(
         <section>
          <div>
-          <img src="" alt="shoe-one"/>
+          <img src={shoe1} alt="shoe-one"/>
          </div>
-         <div>
+         {/* <div>
           <img src="" alt="shoe-two"/>
          </div>
           <img src="" alt="shoe-three"/>
@@ -20,7 +21,7 @@ class Shoes extends React.Component{
          </div>
          <div>
           <img src="" alt="shoe-five"/>
-         </div>
+         </div> */}
         </section>
         )
     }
