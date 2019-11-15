@@ -76,7 +76,9 @@ class Main extends React.Component{
          <>
          
            <section className="Body">
+            <div className='body-box'>
            <h1 className="Body__title">Dress Me Up!</h1> 
+           </div>
            <div className="doll-and-wardrobe">
                 <section className="doll">
                     <Body body={this.state}></Body>

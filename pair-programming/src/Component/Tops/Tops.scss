@@ -1,17 +1,24 @@
+@font-face {
+    font-family: 'playfair';
+    src: "https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap";
+}
+
 .tops-section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 1rem;
-    border: solid #710909 2px;
-    border-radius: 0.25rem;
-    background-color:#FFF
+    border-radius: 0.1rem;
+    background-color:#FFF9EA
 }
 
 .wardrobe-heading {
+    font-family: 'playfair';
+    color: #141414;
     margin-top: 1rem;
     height: 20px;
     width: 560px;
+
 }
 
 .image-container {
@@ -21,10 +28,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .wardrobe-item {
-    height: 180px;
-    width: 200px;
+    height: 220px;
+    width: 240px;
     margin-bottom: 1rem;
 }

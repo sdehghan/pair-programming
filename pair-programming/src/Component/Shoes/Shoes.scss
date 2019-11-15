@@ -3,29 +3,31 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 1rem;
-    border: solid #710909 2px;
-    border-radius: 0.25rem;
-    background-color:#FFF
+    border-radius: 0.1rem;
+    background-color:#FFF9EA
 }
 
 .wardrobe-heading {
+    font-family: 'playfair';
+    color: #141414;
     margin-top: 1rem;
     height: 20px;
     width: 100%;
 }
 
 .image-container {
+    height: 149px;
+    width: 155px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 149px;
-    width: 160px;
     overflow: hidden;
+    margin-bottom: 1rem;
 
 }
 
 .wardrobe-item {
-    height: 180px;
-    width: 200px;
+    height: 220px;
+    width: 240px;
     margin-bottom: 1rem;
 }

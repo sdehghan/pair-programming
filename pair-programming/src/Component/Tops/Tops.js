@@ -19,21 +19,52 @@ class Tops extends React.Component{
         let image=event.target.src;
         console.log(event.target)
         this.props.changeTop(image)
+
         if (i===0){
-          this.setState({show1:false})
-        }else if (i===1){
-            this.setState({show2:false})
-        }else if (i===2){
-            this.setState({show3:false})
-        }else if (i===3){
-            this.setState({show4:false})
-        }else if (i===4){
-            this.setState({show5:false})
-        }
-        else if (i===4){
-            this.setState({show5:false})
+            this.setState({
+                show1:false,
+                show2:true,
+                show3:true,
+                show4:true,
+                show5:true
+            })
+          }else if (i===1){
+              this.setState({
+                show2:false,
+                show1:true,
+                show3:true,
+                show4:true,
+                show5:true
+              }
+            )
+          }else if (i===2){
+              this.setState({
+                show3:false,
+                show2:true,
+                show1:true,
+                show4:true,
+                show5:true
+            })
+          }else if (i===3){
+              this.setState({
+                show4:false,
+                show3:true,
+                show2:true,
+                show1:true,
+                show5:true
+            })
+          }else if (i===4){
+              this.setState({
+                show5:false,
+                show4:true,
+                show3:true,
+                show2:true,
+                show1:true,
+            })
         }
     }
+
+    
 
     render(){
        console.log(this.props)
@@ -42,19 +73,19 @@ class Tops extends React.Component{
         <span className="wardrobe-heading">Tops</span>
 
          <div className="image-container" onClick={(event)=>this.clickHandler(event, 0)}>
-          {this.state.show1? <img src={this.props.data.top1} alt="top-one"/> :null}
+          {this.state.show1? <img className="wardrobe-item" src={this.props.data.top1} alt="top-one"/> :null}
          </div>
          <div className="image-container" onClick={(event)=>this.clickHandler(event,1)}>
-          {this.state.show2? <img src={this.props.data.top2} alt="top-two"/> :null}
+          {this.state.show2? <img className="wardrobe-item" src={this.props.data.top2} alt="top-two"/> :null}
          </div>
          <div className="image-container" onClick={(event)=>this.clickHandler(event,2)}>
-          {this.state.show3? <img src={this.props.data.top3} alt="top-three"/> :null}
+          {this.state.show3? <img className="wardrobe-item" src={this.props.data.top3} alt="top-three"/> :null}
          </div>
          <div className="image-container" onClick={(event)=>this.clickHandler(event,3)}>
-          {this.state.show4? <img src={this.props.data.top4} alt="top-four"/> :null}
+          {this.state.show4? <img className="wardrobe-item" src={this.props.data.top4} alt="top-four"/> :null}
          </div>
          <div className="image-container" onClick={(event)=>this.clickHandler(event,4)}>
-          {this.state.show5? <img src={this.props.data.top5} alt="top-five"/> :null}
+          {this.state.show5? <img className="wardrobe-item" src={this.props.data.top5} alt="top-five"/> :null}
          </div>
         </section>
         )

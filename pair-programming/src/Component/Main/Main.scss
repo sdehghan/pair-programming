@@ -5,12 +5,14 @@
 
 .Body{
 
-    background-color:#FFFAF0;
+    background-color: #141414;
     margin:0;
     padding:0;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+
 
 
     &__title {
@@ -20,11 +22,25 @@
         font-family: 'playfair';
         font-size: 3rem;
         margin-left: 3rem;
+        margin-top: 3rem;
+        color: rgba($color: #fff9ef, $alpha: 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
         }
+}
+
+.body-box {
+    width: 100%;
+    padding-bottom: 0px;
+    border-bottom: solid 5px rgba($color: #fff9ef, $alpha: 0.2);
+    
+
 }
 
 .wardrobe-container {
     display:flex;
     flex-wrap:wrap;
-    width: 775px;
+    width: 825px;
 }

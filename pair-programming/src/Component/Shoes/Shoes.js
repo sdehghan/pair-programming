@@ -20,6 +20,49 @@ class Shoes extends React.Component{
         console.log(event.target)
         this.props.changeBottom(image)
         this.setState({show:false})
+
+        if (i===0){
+          this.setState({
+              show1:false,
+              show2:true,
+              show3:true,
+              show4:true,
+              show5:true
+          })
+        }else if (i===1){
+            this.setState({
+              show2:false,
+              show1:true,
+              show3:true,
+              show4:true,
+              show5:true
+            }
+          )
+        }else if (i===2){
+            this.setState({
+              show3:false,
+              show2:true,
+              show1:true,
+              show4:true,
+              show5:true
+          })
+        }else if (i===3){
+            this.setState({
+              show4:false,
+              show3:true,
+              show2:true,
+              show1:true,
+              show5:true
+          })
+        }else if (i===4){
+            this.setState({
+              show5:false,
+              show4:true,
+              show3:true,
+              show2:true,
+              show1:true,
+          })
+      }
     }
     render(){
         return(
