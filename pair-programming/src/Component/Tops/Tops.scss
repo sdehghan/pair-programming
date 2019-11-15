@@ -1,0 +1,26 @@
+.tops-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem;
+    border: solid #710909 2px;
+    border-radius: 0.25rem;
+    background-color:#FFF
+}
+
+.wardrobe-heading {
+    margin-top: 1rem;
+    height: 20px;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wardrobe-item {
+    height: 149px;
+    width: 160px;
+}

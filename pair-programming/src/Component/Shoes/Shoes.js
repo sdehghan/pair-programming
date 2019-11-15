@@ -8,9 +8,10 @@ class Shoes extends React.Component{
     render(){
 
         return(
-        <section>
-         <div>
-          <img src={shoe1} alt="shoe-one"/>
+        <section className="shoes-section">
+            <span className="wardrobe-heading">Shoes</span>
+         <div className="image-container">
+          <img src={shoe1} className="shoe-wardrobe-item" alt="shoe-one"/>
          </div>
          {/* <div>
           <img src="" alt="shoe-two"/>

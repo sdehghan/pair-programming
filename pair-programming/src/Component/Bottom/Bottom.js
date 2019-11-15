@@ -13,9 +13,10 @@ class Bottom extends React.Component{
         
 
         return(
-        <section>
-         <div  name="top1" onClick={this.clickHandler}>
-          <img src={bottom1} alt="bottom-one"/>
+        <section className="pants-section1">
+            <span className="wardrobe-heading">Bottoms</span>
+         <div className="image-container" name="top1" onClick={this.clickHandler}>
+          <img src={bottom1} className="wardrobe-item" alt="bottom-one"/>
          </div>
          {/* <div>
           <img src="" alt="bottom-two"/>

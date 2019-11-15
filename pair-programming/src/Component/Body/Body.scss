@@ -1,4 +1,31 @@
+@font-face {
+    font-family: 'playfair';
+    src: "https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap";
+}
+
+
 .doll-body {
     display: flex;
     flex-direction: column;
+    margin: 3rem;
+    justify-content: flex-start;
+}
+
+.doll-and-wardrobe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+}
+
+.doll {
+
+}
+
+.wardrobe {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+    width: 400px
 }

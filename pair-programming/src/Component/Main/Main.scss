@@ -1,9 +1,24 @@
+@font-face {
+    font-family: 'playfair';
+    src: "https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap";
+}
+
 .Body{
 
     background-color:#FFFAF0;
     margin:0;
     padding:0;
-    height: 100Vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
+
+
+    &__title {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        font-family: 'playfair';
+        font-size: 3rem;
+        margin-left: 3rem;
+        }
 }

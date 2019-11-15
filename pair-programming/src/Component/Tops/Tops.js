@@ -8,13 +8,14 @@ class Tops extends React.Component{
     render(){
 
         return(
-        <section>
-         <div>
-          <img src={top1} alt="top-one"/>
-         </div>
+        <section className="tops-section">
+        <span className="wardrobe-heading">Tops</span>
+        <div className="image-container">
+          <img className="wardrobe-item" src={top1} alt="top-one"/>
+        </div>
          {/* <div>
           <img src="" alt="top-two"/>
-         </div>
+         
           <img src="" alt="top-three"/>
          <div>
           <img src="" alt="top-four"/>
