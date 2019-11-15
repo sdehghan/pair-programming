@@ -4,9 +4,10 @@ import TOP from '../../Assets/TOP.png';
 
 class Upperbody extends React.Component{
   
-
+  
     render(){
-      console.log(this.props)
+        console.log(this.props)
+     
         return(
             <section>
              <img src={this.props.tops} />

@@ -5,22 +5,16 @@ import Feet from '../Feet/Feet'
 
 
 
-
-
 class Body extends React.Component{
-  state={
-    tops: null,
-    middle: null,
-    bottom: null
-}
 
+   
     render(){
-      console.log('test')
+      console.log(this.props)
         return(
          <section className="doll-body">
-           <Upperbody tops={this.state.tops}></Upperbody>
-           <Leg  middle={this.state.middle}></Leg>
-           <Feet  bottom={this.state.bottom}></Feet>
+           <Upperbody tops={this.props.body.tops}></Upperbody>
+           <Leg  middle={this.props.body.middle}></Leg>
+           <Feet  bottom={this.props.body.bottom}></Feet>
          </section>
         )
     }

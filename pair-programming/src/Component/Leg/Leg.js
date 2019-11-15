@@ -1,7 +1,7 @@
 import React from 'react'
 import './Leg.scss'
 import MIDDLE from '../../Assets/MIDDLE.png';
-import Bottom from '../Bottom/Bottom';
+
 
 class Leg extends React.Component{
 
@@ -10,8 +10,8 @@ class Leg extends React.Component{
 
         return(
           <section>
-            <img src={this.props.middle} />
-            <img src={MIDDLE} />
+            <img src={this.props.middle} alt="leg" />
+            <img src={MIDDLE} alt="bottom" />
          </section>
         )
     }
